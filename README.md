@@ -13,10 +13,10 @@ The tool reads path configurations from a `.env` file in the root directory.
 
 ```env
 # Source directory (Local)
-SOURCE_PATH=/Users/suhayatpusahi/Documents/pinkerton-files-backup/var/www/html/document-management/storage/app/documents/
+SOURCE_PATH=/Users/username/Documents/YOUR_SOURCE_PATH
 
 # Destination directory (USB/Flashdisk)
-DESTINATION_PATH=/Volumes/MOVIES/pinkerton2
+DESTINATION_PATH=/Volumes/USB_BACKUP/YOUR_DESTINATION_PATH
 
 # Delay between file transfers (in milliseconds) 
 # Recommended: 100-300ms to maintain USB 2.0 stability
@@ -25,4 +25,7 @@ SLEEP_MS=300
 # How to run
 git clone https://github.com
 cd usb20-filetransfer
-cargo run or cargo build --release
+cargo run 
+
+# Or if you want build 
+cargo build --release
